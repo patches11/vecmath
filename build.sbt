@@ -10,7 +10,7 @@ lazy val root = project.in(file(".")).
   )
 
 lazy val vecMath = crossProject.in(file(".")).settings(
-    crossScalaVersions := Seq("2.10.6", "2.11.7"),
+    crossScalaVersions := Seq("2.10.6", "2.11.7", "2.12.4"),
     scalaVersion := "2.11.7",
     organization := "com.scryetek",
     name := "vecmath",
