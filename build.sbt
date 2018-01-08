@@ -10,14 +10,14 @@ lazy val root = project.in(file(".")).
   )
 
 lazy val vecMath = crossProject.in(file(".")).settings(
-    crossScalaVersions := Seq("2.10.6", "2.11.7", "2.12.4"),
+    crossScalaVersions := Seq("2.11.7", "2.12.4"),
     scalaVersion := "2.12.4",
     organization := "com.scryetek",
     name := "vecmath",
     version := "0.3.1",
     description := "A simple vector maths library for graphics programming.",
 
-    libraryDependencies += "org.scalacheck" %% "scalacheck" % "1.12.5" % "test",
+    libraryDependencies += "org.scalacheck" %% "scalacheck" % "1.12.6" % "test",
     testOptions in Test += Tests.Argument(TestFrameworks.ScalaCheck, "-minSuccessfulTests", "5000"),
 
     homepage := Some(url("https://github.org/mseddon/vecmath")),
