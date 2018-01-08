@@ -14,7 +14,7 @@ lazy val vecMath = crossProject.in(file(".")).settings(
     scalaVersion := "2.12.4",
     organization := "com.scryetek",
     name := "vecmath",
-    version := "0.3.1",
+    version := "0.3.2",
     description := "A simple vector maths library for graphics programming.",
 
     libraryDependencies += "org.scalacheck" %% "scalacheck" % "1.12.6" % "test",
